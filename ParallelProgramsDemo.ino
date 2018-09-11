@@ -28,7 +28,7 @@ void setup() {
 
   Serial.begin(9600);
 
-  const PRGM_LEN = sizeof(assembly)/sizeof(assembly[0])
+  const byte PRGM_LEN = sizeof(assembly)/sizeof(assembly[0]);
   
   //loop through the assembly code for the entire length of the code or until "END" is reached
   for (int i = 0; i < PRGM_LEN && assembly[i][1] != END; i++) {
